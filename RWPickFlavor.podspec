@@ -1,8 +1,8 @@
 Pod::Spec.new do |s|
 
 # 1
-s.platform = :ios
-s.ios.deployment_target = '12.0'
+s.platform = :ios, 12.0
+#s.ios.deployment_target = '12.0'
 s.name = "RWPickFlavor"
 s.summary = "RWPickFlavor lets a user select an ice cream flavor."
 s.requires_arc = true
@@ -20,8 +20,7 @@ s.author = { "Izaan Saleem" => "sizaan55@gmail.com" }
 s.homepage = "https://github.com/sizaan5/RWPickFlavor"
 
 # 6
-s.source = { :git => "https://github.com/sizaan5/RWPickFlavor.git",
-             :tag => "#{s.version}" }
+s.source = { :git => "https://github.com/sizaan5/RWPickFlavor.git", :tag => s.version.to_s }
 
 # 7
 s.framework = "UIKit"
